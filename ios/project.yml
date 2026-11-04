@@ -1,0 +1,33 @@
+# Fallback only: if SnapCount.xcodeproj won't open in your Xcode version, regenerate it with
+#   brew install xcodegen && cd ios && xcodegen
+name: SnapCount
+options:
+  bundleIdPrefix: biz.elastictech
+  deploymentTarget:
+    iOS: "17.0"
+targets:
+  SnapCount:
+    type: application
+    platform: iOS
+    sources:
+      - path: SnapCount
+        excludes:
+          - Info.plist
+    settings:
+      base:
+        PRODUCT_BUNDLE_IDENTIFIER: biz.elastictech.snapcount
+        SWIFT_VERSION: "5.0"
+        TARGETED_DEVICE_FAMILY: "1"
+        MARKETING_VERSION: "1.0"
+        CURRENT_PROJECT_VERSION: "1"
+        GENERATE_INFOPLIST_FILE: YES
+        INFOPLIST_FILE: SnapCount/Info.plist
+        ASSETCATALOG_COMPILER_APPICON_NAME: AppIcon
+        ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME: AccentColor
+        INFOPLIST_KEY_CFBundleDisplayName: SnapCount
+        INFOPLIST_KEY_NSCameraUsageDescription: SnapCount uses the camera to photograph the items you want to count.
+        INFOPLIST_KEY_NSPhotoLibraryUsageDescription: SnapCount lets you choose a photo of the items you want to count.
+        INFOPLIST_KEY_NSLocalNetworkUsageDescription: SnapCount connects to your counting server on the local network while you're testing.
+        INFOPLIST_KEY_UILaunchScreen_Generation: YES
+        INFOPLIST_KEY_UIApplicationSceneManifest_Generation: YES
+        INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone: UIInterfaceOrientationPortrait

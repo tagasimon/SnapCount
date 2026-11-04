@@ -1,0 +1,9 @@
+filename,item,true_count,should_warn,scenario
+chairs_separated_01.jpg,plastic chairs,24,no,clearly separated
+chairs_nested_01.jpg,plastic chairs,85,yes,nested stacks
+chairs_partly_hidden_01.jpg,plastic chairs,40,yes,partially hidden
+logs_pile_01.jpg,eucalyptus logs,63,no,log ends facing camera
+logs_pile_side_01.jpg,eucalyptus logs,63,yes,same pile from the side
+bags_similar_colour_01.jpg,bags of cement,30,no,objects with similar colours
+crates_dim_light_01.jpg,crates,18,yes,poor lighting and shadows
+warehouse_mixed_01.jpg,boxes,52,no,other objects that should not be counted
